@@ -1,0 +1,50 @@
+ol {
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    left: 200px;
+}
+
+h1 {
+    display: block; /* försvinner/gömmer den */
+    position: relative;
+    top: 0px;
+    left: 500px;
+    color: red;
+    margin : 10rem 3rem ;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    border: 8px solid purple; /* border innehåller 3 andra attributer  */
+    border-color: blue;
+    border-width: 5px;
+    border-style: dotted; /* detta är en del av border  */
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+p {
+    border-radius: 20px;
+    background-color: grey;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(0, 250, 8);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div {
+    width: 300px;
+    height: 400px;
+    background-image: url("/images/360px-Grumpy_Cat_by_Gage_Skidmore.jpg");
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
