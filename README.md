@@ -6,5 +6,6 @@ Todolista
 - skapa mappar
 - namnge folders
 - etc
+- extra stuff
 
 kontakta alrik.he@gritacademy.se 
