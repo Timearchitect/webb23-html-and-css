@@ -1,0 +1,58 @@
+*{
+padding: 0.8rem;
+
+}
+
+div {
+    position: relative;
+    color: red;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 255, 0.16);
+    /*   magenta rgb */
+    outline: 5px solid currentColor;
+    /*  border: 10px solid currentColor;
+    background: rgb(246,244,209);
+    background: radial-gradient(circle, rgba(246,244,209,1) 0%, rgba(79,61,2,1) 100%);  */
+}
+
+main {
+    /* flexbox */
+    border: 5px solid green;
+    flex-direction: column;
+    display: flex;
+    /* gap: 10%; */
+    justify-content: space-around;
+}
+
+#second {
+    position: sticky;
+}
+
+
+
+#flexbox{
+    margin:auto;
+    width: 31rem;
+    height: 10rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+#pic{
+    outline: 5px solid currentColor;
+    width: auto;
+    height: auto;
+}
+#info-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    flex-direction: column;
+}
+
+#info-container div{
+    background-color: aliceblue;
+}
