@@ -3,9 +3,12 @@
     padding: 0.2rem;
     outline: 1px solid rgb(0, 0, 0);
 }
-/* #special-case{
+
+/*
+#special-case{
     background-color: #f011c7
 }
+
 .produkt{
     height: 5rem;
     width: 10rem;
@@ -41,9 +44,9 @@ main {
     justify-content: end;
 }
 
-
 galleri{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap:2rem;
 }
