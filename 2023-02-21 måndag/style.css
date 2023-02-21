@@ -1,6 +1,6 @@
 *{
 padding: 0.8rem;
-
+font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -19,8 +19,11 @@ div {
 main {
     /* flexbox */
     border: 5px solid green;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
+    position: sticky;
+    top: 20%;
+    bottom: 20%;
     /* gap: 10%; */
     justify-content: space-around;
 }
@@ -33,18 +36,21 @@ main {
 
 #flexbox{
     margin:auto;
-    width: 31rem;
+    width: 32rem;
     height: 10rem;
     display: flex;
     gap: 1.2rem;
 }
 
 #pic{
+    
     outline: 5px solid currentColor;
     width: auto;
     height: auto;
+    flex-grow: 10;
 }
 #info-container{
+    flex-grow: 1;
     width: auto;
     height: auto;
     display: flex;
@@ -55,4 +61,68 @@ main {
 
 #info-container div{
     background-color: aliceblue;
+}
+
+ul{
+    display:inline-flex;
+    vertical-align: middle;
+}
+li{
+    list-style: none;
+}
+
+#sticky{
+    position:sticky;
+    top:0;
+}
+
+.dieside{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    justify-content:center;
+    align-items:center;
+}
+
+.dot{
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+.second{
+    justify-content: space-around;
+}
+
+.second .dot:nth-child(1){
+    background-color: aliceblue;
+    align-self: start;
+    margin-top: 15%;
+}
+
+.second .dot:nth-child(2){
+    background-color: red;
+    align-self: end;
+    margin-bottom: 15%;
+}
+
+.third{
+    justify-content: space-around;
+}
+
+
+.third .dot:nth-child(1){
+    background-color: red;
+    align-self: start;
+    margin-top: 15%;
+}
+
+.third .dot:nth-child(2){
+    background-color: red;
+    align-self: center;
+}
+.third .dot:nth-child(3){
+    background-color: red;
+    align-self: end;
+    margin-bottom: 15%;
 }
