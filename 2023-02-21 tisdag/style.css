@@ -1,0 +1,49 @@
+* {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    outline: 1px solid rgb(0, 0, 0);
+}
+/* #special-case{
+    background-color: #f011c7
+}
+.produkt{
+    height: 5rem;
+    width: 10rem;
+    background-color: #11ccf0
+}
+
+.produkt.rabatt{
+    background-color: #f01111
+}
+
+.alrik{
+    background-color: #cff011
+}
+
+p.produkt{
+    height: 1rem;
+    width: 20rem;
+    background-color: #c1c1c1
+} */
+
+div,
+p {
+    outline: 2px solid #f01111;
+}
+div p {
+    background-color: #f01111;
+}
+
+main {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+galleri{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
