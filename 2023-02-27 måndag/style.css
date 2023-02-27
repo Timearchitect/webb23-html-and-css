@@ -1,0 +1,69 @@
+/* *{outline: 2px solid magenta} */
+
+:root {
+    --my-color: purple;
+    --alriks-default-padding: 2%; /* variabel */
+    margin: var(--alriks-default-padding);
+}
+
+div {
+    /* background-color: var(--my-color); */
+    margin: var(--alriks-default-padding);
+    width: 100px;
+    height: 100px;
+}
+
+.boxes{
+    background-color: var(--my-color);
+}
+/* .boxes:hover {
+    width: 300px;
+} */
+
+.boxes:nth-child(1) {
+    --my-color: hsl(0, 100%, 50%);
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+.boxes:nth-child(2) {
+    --my-color: hsl(131, 100%, 50%);
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transition-property: background-color,width;
+}
+.boxes:nth-child(3) {
+    --my-color: hsl(60, 100%, 50%);
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transform: rotate(45deg);
+}
+.boxes:nth-child(4) {
+    background-color: green;
+    border: 5px solid red;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transform:rotate(0) skew(0,0);
+}
+
+.boxes:nth-child(1):hover {
+    width: 400px;
+}
+.boxes:nth-child(2):hover {
+    width: 400px;
+    background-color: blue;
+
+}
+.boxes:nth-child(3):hover {
+    transform: rotate(360deg);
+}
+.boxes:nth-child(4):hover {
+    margin-left: 400px;
+    border: 20px solid rgb(0, 242, 255);
+    background-color: rgb(255, 0, 212);
+    transform: rotate(360deg) skew(45deg,45deg);
+
+}
