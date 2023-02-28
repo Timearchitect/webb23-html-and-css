@@ -1,0 +1,66 @@
+* {
+    padding: 2%;
+    margin: 2%;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+}
+
+div:nth-child(1) {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms; /*js använder det enheten*/
+    background-color: hsl(10, 100%, 48%);
+    /* left-right top-bottom blur-amount color  */
+    box-shadow: 30px 2px 2px red;
+
+}
+div:nth-child(2) {
+    animation-duration: 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-name: myAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes myAnimation {
+    0%{
+        translate: 0px 0px;
+        background-color: hsl(55, 100%, 48%);
+
+    }
+    50%{
+        translate: 100px 100px;
+        background-color: hsl(201, 100%, 48%);
+
+    }
+    100%{
+        translate: -50px 0px;
+        background-color: hsl(299, 100%, 48%);
+
+    }
+    
+}
+
+
+div:nth-child(1):hover {
+    box-shadow: 2px 2px 100px rgb(0, 13, 255);
+    background-color: hsl(60, 100%, 48%);
+}
+div:nth-child(2):hover {
+}
+
+#hover-fix{
+    animation-name: myAnimation;
+}
+main:hover {
+    animation-duration: 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

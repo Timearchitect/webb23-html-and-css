@@ -55,7 +55,6 @@ div {
 .boxes:nth-child(2):hover {
     width: 400px;
     background-color: blue;
-
 }
 .boxes:nth-child(3):hover {
     transform: rotate(360deg);
@@ -65,5 +64,14 @@ div {
     border: 20px solid rgb(0, 242, 255);
     background-color: rgb(255, 0, 212);
     transform: rotate(360deg) skew(45deg,45deg);
+}
 
+div{
+    background-color: blue;
+    width:100px;
+    height: 100px;
+    animation-duration: 3000ms;
+
+    animation-name: change-background;
+    animation-direction: alternate;
 }
