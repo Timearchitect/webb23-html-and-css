@@ -3,6 +3,8 @@
     margin: 2%;
 }
 
+
+
 div {
     width: 100px;
     height: 100px;
@@ -15,7 +17,7 @@ div:nth-child(1) {
     transition-duration: 500ms; /*js använder det enheten*/
     background-color: hsl(10, 100%, 48%);
     /* left-right top-bottom blur-amount color  */
-    box-shadow: 30px 2px 2px red;
+    box-shadow: 3px 2px 2px rgb(0, 255, 26);
 
 }
 div:nth-child(2) {
@@ -55,6 +57,15 @@ div:nth-child(1):hover {
 div:nth-child(2):hover {
 }
 
+#container:hover div{ /*fram transision*/
+
+    transition: translate;
+    transition-duration: 500ms;
+    translate: 500px 0px;
+}
+
+
+
 #hover-fix{
     animation-name: myAnimation;
 }
@@ -63,4 +74,15 @@ main:hover {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+
+
+@media screen and (min-width:500px){
+
+    *{
+        background-color: rgb(225, 111, 111);
+    }
+
+    
 }

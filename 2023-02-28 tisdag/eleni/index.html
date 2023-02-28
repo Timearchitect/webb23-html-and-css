@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            outline: 1px dotted magenta;
+            background-color: rgb(174, 244, 142);
+            padding: 2%;
+            margin: 2%;
+        }
+        header {
+            background-color: red;
+        }
+        main div div {
+            height: 20vh;
+        }
+        main{
+            background-color: rgb(192, 240, 255);
+
+        }
+        main div {
+            /* parent */
+            display: flex;
+            flex-wrap: wrap;
+            background-color: pink;
+        }
+
+        main div div:nth-child(1) {
+            width: 100%;
+            background-color: rgb(213, 255, 192);
+        }
+        main div div:nth-child(2) {
+            flex-grow: 1;
+            background-color: rgb(192, 201, 255);
+        }
+        main div div:nth-child(3) {
+            flex-grow: 1;
+            background-color: rgb(192, 246, 255);
+        }
+        main div div h2 {
+            background-color: rgb(243, 255, 192);
+        }
+        h2 {
+            text-align: center;
+            height: 2vh;
+            width: 100%;
+            margin: 1%;
+        }
+
+
+        
+        footer {
+            background-color: green;
+        }
+    </style>
+    <body>
+        <header>
+            header
+            <nav>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            main
+            <div id="main-box">
+                <div>
+                    <h2>sdfsd</h2>
+                    <h2>sdfsdf</h2>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="main-box2">
+                <div>
+                    <h2>sdfds</h2>
+                    <h2>sdfsdffds</h2>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </main>
+        <footer>copyright© 2023 alrik he</footer>
+    </body>
+</html>
