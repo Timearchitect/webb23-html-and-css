@@ -1,0 +1,10 @@
+body{
+width: 500px;
+background-color: #ececec;
+
+}
+
+#pic{
+
+    background-image: url(../images/sunzetweblogo3.png);
+}
