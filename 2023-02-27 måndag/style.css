@@ -1,10 +1,16 @@
 /* *{outline: 2px solid magenta} */
 
 :root {
+    background-color: rgb(255, 255, 255);
+
     --my-color: purple;
     --alriks-default-padding: 2%; /* variabel */
     margin: var(--alriks-default-padding);
+    font-size: 6vw;
 }
+
+
+
 
 div {
     /* background-color: var(--my-color); */
@@ -74,4 +80,17 @@ div{
 
     animation-name: change-background;
     animation-direction: alternate;
+}
+
+
+
+
+@media screen and (max-width:612px){
+
+    :root {
+        background-color: aqua;
+        font-size: 20vw;
+
+    }
+    
 }
