@@ -1,0 +1,22 @@
+h1::before{
+    content: "LIGHT MODE";
+}
+
+body{
+    background-color: rgb(255, 244, 171);
+}
+
+@media (prefers-color-scheme:dark){
+    
+    h1{
+        filter:invert(1)
+    }
+    h1::before{
+        content: "DARK MODE";
+    }
+    
+    body{
+        background-color: rgb(61, 62, 90);
+    }
+
+}

@@ -1,0 +1,14 @@
+footer{
+    display: grid;
+    width:100vw;
+    height: 20vh;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100%;
+    gap:10px;
+    background-color: red;
+    justify-content: space-between;
+}
+
+footer div{
+    outline: 2px solid blue;
+}
