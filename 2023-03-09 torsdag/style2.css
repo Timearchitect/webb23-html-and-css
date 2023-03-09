@@ -3,6 +3,7 @@
     font-size: 3rem;
     padding: 0;
     margin: 0;
+    --icon-size: 150px;
 }
 body {  /**/
     background-color: rgb(119, 223, 255);
@@ -19,6 +20,7 @@ body::after{
         content: "TABLET";
     }
 }
+
 @media  (width < 500px) {  /* mobile*/
     body {
         background-color: red;
@@ -28,24 +30,24 @@ body::after{
     }
 }
 
-
 input[type="checkbox"]{ /* input checkbox*/
    position:absolute;
-    margin-top: -150px;
-    width:150px;
-    height:150px;
+    margin-top: calc(-1 * var(--icon-size));
+    width:var(--icon-size);
+    height:var(--icon-size);
     opacity: 0;
     
 }
 input[type="checkbox"]:checked{
-    width:150px;
-    height:150px;
+    width:var(--icon-size);
+    height:var(--icon-size);
 }
 
 input[type="checkbox"] + ul{  /*på ul*/
   display: none;
   opacity: 0;
 }
+
 input[type="checkbox"]:checked + ul{
     display: block;
     opacity: 1;
@@ -56,8 +58,8 @@ input[type="checkbox"]:checked + ul{
     background-repeat: no-repeat;
     background-size: fit;
     background-position: center center;
-    width:150px;
-    height:150px;
+    width:var(--icon-size);
+    height:var(--icon-size);
 }
 
 ul{
