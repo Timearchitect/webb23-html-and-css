@@ -1,0 +1,81 @@
+
+*{
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+body {  /**/
+    background-color: rgb(119, 223, 255);
+}
+body::after{
+    content: "DESKTOP";
+}
+
+@media (min-width:500px) and (max-width: 1200px) { /*tablet*/
+    body {
+        background-color: rgb(0, 255, 13);
+    }
+    body::after{
+        content: "TABLET";
+    }
+}
+@media  (width < 500px) {  /* mobile*/
+    body {
+        background-color: red;
+    }
+    body::after{
+        content: "MOBILE";
+    }
+}
+
+
+input[type="checkbox"]{ /* input checkbox*/
+   position:absolute;
+    margin-top: -150px;
+    width:150px;
+    height:150px;
+    opacity: 0;
+    
+}
+input[type="checkbox"]:checked{
+    width:150px;
+    height:150px;
+}
+
+input[type="checkbox"] + ul{  /*på ul*/
+  display: none;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + ul{
+    display: block;
+    opacity: 1;
+}
+
+.hamburgerIcon{
+    background-image: url("hamburgare_Artboard 8.png") ;
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center center;
+    width:150px;
+    height:150px;
+}
+
+ul{
+    background-color: red;
+} 
+li{
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+    color:rgb(248, 248, 248);
+}
+#active li{
+    background-color: pink;
+
+}

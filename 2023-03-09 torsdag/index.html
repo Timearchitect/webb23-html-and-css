@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" />
+            <label class="menu-icon" for="nav-toggle"
+                ><span class="navicon"></span
+            ></label>
+            <ul>
+                <a href="#"> <li>Home</li></a>
+                <a href="#"> <li>Projects</li></a>
+                <a href="#"> <li>Contacts</li></a>
+            </ul>
+        </nav>
+
+        <a id="jsToogler" onclick="toogle()"
+            ><span class="navicon">HELLO</span></a
+        >
+
+        <script>
+            function toogle() {
+                const navbar = document.getElementsByTagName("nav");
+                if (navbar[0].style.display == "none")
+                    navbar[0].style.display = "block";
+                else navbar[0].style.display = "none";
+                console.log(navbar);
+            }
+        </script>
+    </body>
+</html>
