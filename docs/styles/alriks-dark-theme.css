@@ -1,12 +1,15 @@
 
 *{
     background-color: #fff1d4;
+    font-family: Arial, Helvetica, sans-serif;
 }
 @media (prefers-color-scheme:dark) {
     
 
     *{
         background-color: #181818;
+        color:#ddd;
+        outline: 1px dotted #dddddd33;
     }
     h1,h2,h3,p{
         color:#ddd;

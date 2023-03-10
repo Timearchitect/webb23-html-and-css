@@ -8,6 +8,8 @@
 
     *{
         background-color: #181818;
+        color:#ddd;
+        outline: 1px dotted #dddddd33;
     }
     h1,h2,h3,p{
         color:#ddd;
